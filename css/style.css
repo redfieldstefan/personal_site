@@ -1,0 +1,533 @@
+/* General */
+
+body {
+	
+	background: url('../img/tarot-background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+
+h1 {
+	font-family: "open sans";
+	text-transform: uppercase;
+	margin: 0px;
+
+}
+
+h2 {
+	text-transform: uppercase;
+	font-family: "open sans";
+	font-size: 20px;
+	color: white;
+}
+
+p {
+	margin: 0;
+	font-family: "open sans";
+}
+.arrow-button {
+	background: url('../img/arrow-button.png');
+	height: 100px;
+	width: 100px;
+	cursor: hand;
+}
+
+	.arrow-button:hover {
+	background: url('../img/red-arrow-button.png');
+	height: 100px;
+	width: 100px;
+}
+
+.logo {
+	float: left;
+	margin-right: 0px;
+	height: 50px;
+}
+
+.logo h1 {
+	font-style: italic;
+	font-size: 35px;
+	color: white;
+	margin-top: 10px;
+	margin-left: 50px;
+	float: left;
+}
+
+	.logo h1:hover {
+	color: #00CCCC;
+}
+
+.header {
+	display: inline-block;
+	position: fixed;
+	height: 70px;
+	width: 100%;
+	background-color: #500000 ;
+	z-index: 10;
+	overflow: hidden;
+	
+}
+
+.header h2 {
+	font-size: 18px;
+	float: left;
+	font-weight: lighter;
+	margin-left: 350px;
+	margin-top: 25px;
+}
+
+.top-button {
+	z-index: 1;
+	height: 75px;
+	float: left;
+	margin-left: 300px;
+	margin-top: 15px;
+}
+
+.top-button p{
+	color: white;
+	float: left;
+	text-transform: uppercase;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+.small-arrow-up {
+	margin-left: 115px;
+	height: 40px;
+	width: 40px;
+	float: left;
+	position: absolute;
+	background: url('../img/small-arrow-up.png');
+
+}
+	.small-arrow-up:hover {
+		background: url('../img/small-arrow-up-green.png');
+		cursor: hand;
+
+	}
+
+nav {
+	float: right;
+	
+
+}
+	nav ul {
+		margin-right: 50px;
+		margin-top: 30px;
+	}
+
+	nav a{
+	color: white;
+	text-decoration:none; 
+	
+
+}
+
+		nav a:hover{
+	font-style: italic;
+	color: #00CCCC;
+	
+
+}
+		nav li{
+	
+	padding-left: 10px;
+	font-family: "open sans";
+	text-transform: uppercase;
+	display: inline;
+	
+
+}
+
+
+.footer {
+	background-color: 006666;
+	position: absolute;
+}
+
+.footer h2 {
+	text-align: center;
+	margin-top: 25px;
+}
+
+
+
+/* Index  */
+
+#index-body {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+
+}
+
+
+#index-body .footer {
+	height: 80px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#containers {
+	width: 100%;
+	overflow: hidden;
+}
+
+#top-container {
+	width: 100%;
+	height: 650px;
+	margin-top: 50px;
+}
+
+#top-box {
+	height: 650px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background: url("../img/1400x650-top-box.jpg");
+}
+
+	#top-container h1{
+		text-align: center;
+		position: absolute;
+		color: red;
+		font-size: 40px;
+		font-weight: lighter;
+		margin-left: 50%;
+		margin-top: 45px;
+		width: 600px;
+		
+		text-transform: none;
+	}
+
+	#top-container .arrow-button {
+		position: absolute;
+		margin-top: 460px;
+		margin-left: 29%;
+
+	}
+
+	.arrow-button p {
+		text-align: center;
+		margin-top: 105px;
+		text-transform: uppercase;
+		color: white;
+	}
+
+#container-1 {
+	position: absolute;
+	margin-top: 0px;
+	height: 2000px;
+	width: 100%;
+	background: url('../img/space-background.jpg');
+
+}
+
+#container-1-text {
+	width: 500px;
+	margin-top: 1335px;
+	margin-left: 750px;
+	text-transform: uppercase;
+	line-height: 23px;
+}
+
+	#container-1 h1{
+		color: white;
+	}
+
+	#container-1 p {
+		color: white;
+		
+		margin-top: 20px;
+		
+	}
+
+
+#text-1 {
+	
+}
+
+#box-1 {
+	
+}
+
+	#box-1 .arrow-button {
+	position: absolute;
+	margin-left: 23%;
+	margin-top: 100px;
+}
+
+/*CONTAINER 2*/
+
+#container-2 {
+
+	margin-top: 2000px;
+	height: 900px;
+	width: 100%;
+	
+	background-color: white;
+}
+
+#container-2 h2 {
+	width: 100%;
+	text-align: center;
+	font-weight: lighter;
+	color: #00CCCC;
+	font-size: 35px;
+	padding-top: 150px;
+	
+
+}
+
+#TCG-panel {
+	border-right: 10px solid #336666;
+	margin-left: 50px;
+	position: absolute;
+	height: 450px;
+	width: 1000px;
+	z-index: 3;
+	box-shadow: 3px 3px 5px #282828 ;
+	background-color: white;
+}
+	#TCG-panel:hover {
+		cursor: hand;
+		box-shadow: 4px 4px 5px #00CCCC ;
+	} 
+
+#RB-panel {
+	border-right: 10px solid #33CC99;
+	margin-left: 175px;
+	position: absolute;
+	height: 450px;
+	width: 1000px;
+	z-index: 2;
+	background-color: white;
+	box-shadow: 3px 3px 5px #282828 ;
+}
+	
+	#RB-panel:hover {
+		cursor: hand;
+		box-shadow: 4px 4px 5px #00CCCC ;
+	} 
+
+#orbana-panel {
+	border-right: 10px solid #33FF99;
+	margin-left: 300px;
+	position: absolute;
+	height: 450px;
+	width: 1000px;
+	z-index: 1;
+	background-color: white;
+	box-shadow: 3px 3px 5px #282828 ;
+
+}
+
+	#orbana-panel:hover {
+		cursor: hand;
+		box-shadow: 4px 4px 5px #00CCCC ;
+	} 
+
+.work-image {
+	height: 450px;
+	width: 500px;
+	float: left;
+	overflow: hidden;
+}
+
+.work-text {
+	float: left;
+	margin-left: 50px;
+	width: 400px;
+	margin-top: 25px;
+}
+	.work-text p{
+		font-size: 14px;
+	}
+
+
+
+#container-3 {
+	height: 1000px;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: url('../img/bear-monster.jpg');
+}
+
+#container-4 {
+	width: 100%;
+	height: 1100px;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+
+}
+
+#container-4 h1{
+	padding-top: 150px;
+	width: 100%;
+}
+
+#site-boxes {
+	width: 1300px;
+	margin-top: 35px;
+	margin-left: 57px;
+
+}
+
+
+.site-box {
+	float: left;
+	margin-left: 30px;
+	width: 400px;
+
+	
+}
+
+.site-box img {
+	border-radius: 50%;
+
+	box-shadow: 3px 3px 5px #282828 ;
+	height: 400px;
+	width: 400px;
+	overflow: hidden;
+}
+
+	.site-box img:hover {
+		border: 1px solid #00CCCC;
+		box-shadow: 4px 4px 5px #00CCCC ;
+	}
+
+.site-box-text {
+	width: 350px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.site-box-text h3 {
+	color: red;
+	text-transform: uppercase;
+
+}
+
+.site-box-text p {
+	color: black;
+	text-align: justify;
+	padding-bottom: 5px;
+}
+
+#container-5 {
+	
+	height: 500px;
+	
+	
+}
+
+#container-5-text {
+	background-color:rgba(0,0,0,0.75);
+	width: 450px;
+	height: 350px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+#container-5 h1 {
+	padding-left: 35px;
+	background-color: black;
+	color: white;
+}
+#container-5 p {
+	text-align: center;
+	padding-top: 25px;
+	margin-left: 35px;
+	width: 375px;
+	color: white;
+	font-size: 23px;
+	text-transform: uppercase;
+	text-align: justify;
+
+}
+
+#container-5 em {
+	color: red;
+	font-size: 30px;
+}
+
+
+
+
+
+
+/*ARROWS*/
+
+#arrow1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#arrow2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	margin-top: 50px;
+
+	background: url('../img/arrow-button.png');
+}
+
+	#arrow2:hover {
+		background: url('../img/red-arrow-button.png');
+		cursor: hand;
+
+	}
+
+#arrow3 {
+	position: absolute;
+	margin-top: 475px;
+	margin-left: 50px;
+	height: 75px;
+	width: 175px;
+	float: left;
+	background: url('../img/arrow3.png');
+	z-index: 1;
+
+}
+
+#arrow3:hover{
+	background: url('../img/arrow3-red.png');
+	cursor: hand;
+}
+
+#arrow4{
+	background: url('../img/blue-arrow-button.png');
+	height: 125px;
+	width: 125px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 700px;
+}
+	#arrow4:hover{
+		background: url('../img/red-down-arrow.png');
+	}
+
+
+@media (max-width: 1000px) {
+	body {
+		width: 100%;
+		background: none;
+	}
+
+	#index-body {
+		width: 100%;
+		
+	}
+}
+
