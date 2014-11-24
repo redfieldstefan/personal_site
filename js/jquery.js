@@ -3,18 +3,14 @@
 
 $(document).ready(function(){
 
-	$('.small-arrow-up').click(function(event){
-		event.preventDefault();
-		var n = $(document).height();
-		$('html, body').animate({scrollTop: 0}, 1000);
-	});
+
 
 	$('#arrow1').click(function(event) {
     // Preventing default action of the event
     event.preventDefault();
     // Getting the height of the document
     var n = $(document).height();
-    $('html, body').animate({ scrollTop: 1925 }, 7000);
+    $('html, body').animate({ scrollTop: 1950 }, 7000);
 //                                       |    |
 //                                       |    --- duration (milliseconds) 
 //                                       ---- distance from the top
@@ -23,13 +19,13 @@ $(document).ready(function(){
 	$('#arrow2').click(function(event){
 		event.preventDefault();
 		var n = $(document).height();
-		$('html, body').animate({scrollTop: 2775}, 2000);
+		$('html, body').animate({scrollTop: 2800}, 2000);
 	});
 
 	$('#arrow3').click(function(event){
 		event.preventDefault();
 		var n = $(document).height();
-		$('html, body').animate({scrollTop: 4675}, 7000);
+		$('html, body').animate({scrollTop: 4700}, 7000);
 	});
 
 	$('#arrow4').click(function(event){
@@ -61,6 +57,23 @@ $('#Orbana-Panel').click(function(event){
 		
 	});
 
+
+var navOpen = false;
+
+	$('.menu-title').click(function(){
+		if (!navOpen) {
+			$('nav').animate({marginTop: '0'}, 500);
+			$('.menu-trigger').css({display: "none"});
+			$('.menu-trigger2').css({display: "inline"});
+		
+			navOpen = true;
+		} else {
+			$('nav').animate({marginTop: '-360'}, 500);
+			$('.menu-trigger').css({display: "inline"});
+			$('.menu-trigger2').css({display: "none"});
+			navOpen = false;
+		};
+	});
 
 
 })

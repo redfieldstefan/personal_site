@@ -1,11 +1,12 @@
 /* General */
 
 body {
-	
+	width: 100%;
+
 	background: url('../img/tarot-background.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100%;
+
 }
 
 
@@ -27,6 +28,14 @@ p {
 	margin: 0;
 	font-family: "open sans";
 }
+
+#container {
+	width: 100%;
+}
+
+
+/*HEADER*/
+
 .arrow-button {
 	background: url('../img/arrow-button.png');
 	height: 100px;
@@ -40,43 +49,107 @@ p {
 	width: 100px;
 }
 
-.logo {
-	float: left;
-	margin-right: 0px;
-	height: 50px;
-}
-
-.logo h1 {
-	font-style: italic;
-	font-size: 35px;
-	color: white;
-	margin-top: 10px;
-	margin-left: 50px;
-	float: left;
-}
-
-	.logo h1:hover {
-	color: #00CCCC;
-}
 
 .header {
-	display: inline-block;
 	position: fixed;
-	height: 70px;
 	width: 100%;
-	background-color: #500000 ;
 	z-index: 10;
 	overflow: hidden;
 	
 }
 
-.header h2 {
-	font-size: 18px;
+.logo {
+	float: left;
+	height: 75px;
+	margin-left: 75px;
+	margin-top: 10px;
+}
+
+.logo h1 {
+	font-style: italic;
+	font-size: 35px;
+	color: #00CCCC   ;
+	float: left;
+}
+
+	.logo h1:hover {
+	color: #990000;
+}
+
+.logo p {
+	color: red;
+	font-style: italic;
+}
+
+nav {
+	margin-left: 50%;
+	margin-top: -360px;
+	width: 350px;
+	height: 425px;
+	float: left;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	height: 90px;
+	width: 100%;
+	border-bottom: 1px solid white;
+	list-style: none;
+	background-color:rgba(0,0,0,0.75);
+}
+
+.menu-title {
+	background-color: #990000;
+	height: 70px;
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-title h2{
+	color: white;
+	margin-top: 15px;
+	padding-left: 30px;
 	float: left;
 	font-weight: lighter;
-	margin-left: 350px;
-	margin-top: 25px;
+	font-size: 25px;
 }
+
+.menu-trigger {
+	height: 35px;
+	width: 35px;
+	background: url('../img/menu-trigger-down.png');
+	float: left;
+	margin-left: 25px;
+	margin-top: 15px;
+}
+
+.menu-trigger:hover {
+	background: url('../img/menu-trigger-down2.png');
+		cursor: hand;
+}
+
+.menu-trigger2 {
+	height: 35px;
+	width: 35px;
+	background: url('../img/menu-trigger-up.png');
+	float: left;
+	margin-left: 25px;
+	margin-top: 15px;
+	display: none;
+}
+
+.menu-trigger2:hover {
+	background: url('../img/menu-trigger-up2.png');
+	cursor: hand;
+}
+
+
+/*Container-1*/
 
 .top-button {
 	z-index: 1;
@@ -109,38 +182,7 @@ p {
 
 	}
 
-nav {
-	float: right;
-	
 
-}
-	nav ul {
-		margin-right: 50px;
-		margin-top: 30px;
-	}
-
-	nav a{
-	color: white;
-	text-decoration:none; 
-	
-
-}
-
-		nav a:hover{
-	font-style: italic;
-	color: #00CCCC;
-	
-
-}
-		nav li{
-	
-	padding-left: 10px;
-	font-family: "open sans";
-	text-transform: uppercase;
-	display: inline;
-	
-
-}
 
 
 .footer {
@@ -178,16 +220,16 @@ nav {
 
 #top-container {
 	width: 100%;
-	height: 650px;
-	margin-top: 50px;
+	height: 750px;
+	margin-top: 0px;
 }
 
 #top-box {
-	height: 650px;
+	height: 750px;
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	background: url("../img/1400x650-top-box.jpg");
+	background: url("../img/1450x750-multiple.jpg");
 }
 
 	#top-container h1{
@@ -205,7 +247,7 @@ nav {
 
 	#top-container .arrow-button {
 		position: absolute;
-		margin-top: 460px;
+		margin-top: 525px;
 		margin-left: 29%;
 
 	}
@@ -359,7 +401,7 @@ nav {
 
 #container-4 {
 	width: 100%;
-	height: 1100px;
+	height: 1150px;
 	text-align: center;
 	margin-top: 0px;
 	margin-left: auto;
@@ -423,7 +465,7 @@ nav {
 
 #container-5 {
 	
-	height: 500px;
+	height: 475px;
 	
 	
 }
