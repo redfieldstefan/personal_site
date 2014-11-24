@@ -4,13 +4,63 @@
 $(document).ready(function(){
 
 
+//Menu buttons
+
+ $('.menu li:nth-child(1)').click(function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: 0 }, 800);
+
+    	
+});
+
+ $('.menu li:nth-child(2)').click(function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: 1975 }, 800);
+	
+});
+
+  $('.menu li:nth-child(3)').click(function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: 2810 }, 800);
+	
+});
+
+    $('.menu li:nth-child(4)').click(function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: 4700 }, 800);
+	
+});
+
+    $('.menu li:nth-child(5)').click(function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: 5750 }, 800);
+	
+});
+
+
+//Arrow Buttons
 
 	$('#arrow1').click(function(event) {
     // Preventing default action of the event
     event.preventDefault();
     // Getting the height of the document
     var n = $(document).height();
-    $('html, body').animate({ scrollTop: 1950 }, 7000);
+    $('html, body').animate({ scrollTop: 1975 }, 7000);
 //                                       |    |
 //                                       |    --- duration (milliseconds) 
 //                                       ---- distance from the top
@@ -19,7 +69,7 @@ $(document).ready(function(){
 	$('#arrow2').click(function(event){
 		event.preventDefault();
 		var n = $(document).height();
-		$('html, body').animate({scrollTop: 2800}, 2000);
+		$('html, body').animate({scrollTop: 2810}, 2000);
 	});
 
 	$('#arrow3').click(function(event){
@@ -68,7 +118,7 @@ var navOpen = false;
 		
 			navOpen = true;
 		} else {
-			$('nav').animate({marginTop: '-360'}, 500);
+			$('nav').animate({marginTop: '-450'}, 500);
 			$('.menu-trigger').css({display: "inline"});
 			$('.menu-trigger2').css({display: "none"});
 			navOpen = false;
