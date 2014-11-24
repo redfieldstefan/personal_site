@@ -6,6 +6,24 @@ $(document).ready(function(){
 
 //Menu buttons
 
+var navOpen = false;
+
+	$('.menu-title').click(function(){
+		if (!navOpen) {
+			$('nav').animate({marginTop: '0'}, 500);
+			$('.menu-trigger').css({display: "none"});
+			$('.menu-trigger2').css({display: "inline"});
+		
+			navOpen = true;
+		} else {
+			$('nav').animate({marginTop: '-450'}, 500);
+			$('.menu-trigger').css({display: "inline"});
+			$('.menu-trigger2').css({display: "none"});
+			navOpen = false;
+		};
+	});
+
+
  $('.menu li:nth-child(1)').click(function(event) {
     // Preventing default action of the event
     event.preventDefault();
@@ -86,44 +104,78 @@ $(document).ready(function(){
 
 
 
+//Work Panels
+
+	var panelOneOpen=false;
+	var panelTwoOpen=false;
+	var panelThreeOpen=false;
+	
+
 $('#TCG-Panel').click(function(event){
-		$("#TCG-Panel").animate({ marginLeft: '75'}, 500);
-		$("#RB-Panel").animate({ marginLeft: '225'}, 500);
-		$("#Orbana-Panel").animate({ marginLeft: '375'}, 500);
+
+	if(!panelOneOpen){	
+		$("#TCG-Panel").animate({ marginLeft: '0'}, 500);
+		$("#RB-Panel").animate({ marginLeft: '100'}, 500);
+		$("#Orbana-Panel").animate({ marginLeft: '200'}, 500);
+		panelOneOpen = true;
+		panelTwoOpen = false;
+		panelThreeOpen = false;
+	
+		}
+
+	else {
+		$("#TCG-Panel").animate({ marginLeft: '-950'}, 500);
+		$("#RB-Panel").animate({ marginLeft: '100'}, 500);
+		$("#Orbana-Panel").animate({ marginLeft: '200'}, 500);
+		panelOneOpen = false;
+		panelTwoOpen = true;
+		panelThreeOpen= true;
 		
+		};
 	});
 
 $('#RB-Panel').click(function(event){
-		$("#TCG-Panel").animate({ marginLeft: '-773'}, 500);
-		$("#RB-Panel").animate({ marginLeft: '225'}, 500);
-		$("#Orbana-Panel").animate({ marginLeft: '375'}, 500);
 		
+
+		if(!panelTwoOpen){
+		$("#TCG-Panel").animate({ marginLeft: '-950'}, 500);
+		$("#RB-Panel").animate({ marginLeft: '100'}, 500);
+		$("#Orbana-Panel").animate({ marginLeft: '200'}, 500);
+		panelOneOpen=false;
+		panelTwoOpen=true;
+		panelThreeOpen=false;
+		}
+		else {
+		$("#TCG-Panel").animate({ marginLeft: '-950'}, 500);
+		$("#RB-Panel").animate({ marginLeft: '-850'}, 500);
+		$("#Orbana-Panel").animate({ marginLeft: '200'}, 500);
+		panelOneOpen = false;
+		panelTwoOpen=false;
+		panelThreeOpen= true;
+
+		}
 	});
 
 $('#Orbana-Panel').click(function(event){
-		$("#TCG-Panel").animate({ marginLeft: '-900'}, 500);
-		$("#RB-Panel").animate({ marginLeft: '-750'}, 500);
-		$("#Orbana-Panel").animate({ marginLeft: '245'}, 500);
-		
+		if (!panelThreeOpen) {
+		$("#TCG-Panel").animate({ marginLeft: '-950'}, 500);
+		$("#RB-Panel").animate({ marginLeft: '-850'}, 500);
+		$("#Orbana-Panel").animate({ marginLeft: '200'}, 500);
+
+		panelThreeOpen = true;
+		}
+		else{
+			$("#TCG-Panel").animate({ marginLeft: '-950'}, 500);
+			$("#RB-Panel").animate({ marginLeft: '-850'}, 500);
+			$("#Orbana-Panel").animate({ marginLeft: '-750'}, 500);
+
+			panelOneOpen = false;
+			panelTwoOpen=false;
+			panelThreeOpen = false;
+		}
 	});
 
 
-var navOpen = false;
-
-	$('.menu-title').click(function(){
-		if (!navOpen) {
-			$('nav').animate({marginTop: '0'}, 500);
-			$('.menu-trigger').css({display: "none"});
-			$('.menu-trigger2').css({display: "inline"});
-		
-			navOpen = true;
-		} else {
-			$('nav').animate({marginTop: '-450'}, 500);
-			$('.menu-trigger').css({display: "inline"});
-			$('.menu-trigger2').css({display: "none"});
-			navOpen = false;
-		};
-	});
 
 
 })
