@@ -177,6 +177,78 @@ $('#Orbana-Panel').click(function(event){
 
 
 
+//Projects panels
+
+	var panelOneOpen=false;
+	var panelTwoOpen=false;
+	var panelThreeOpen=false;
+	
+
+$('#seedToTableSisters').click(function(event){
+
+	if(!panelOneOpen){	
+		$("#seedToTableSisters").animate({ marginLeft: '200'}, 500);
+		$("#mixAndStones").animate({ marginLeft: '86%'}, 500);
+		$("#bareFrontier").animate({ marginLeft: '93%'}, 500);
+		panelOneOpen = true;
+		panelTwoOpen = false;
+		panelThreeOpen = false;
+	
+		}
+
+	else {
+		$("#seedToTableSisters").animate({ marginLeft: '79%'}, 500);
+		$("#mixAndStones").animate({ marginLeft: '86%'}, 500);
+		$("#bareFrontier").animate({ marginLeft: '93%'}, 500);
+		panelOneOpen = false;
+		panelTwoOpen = false;
+		panelThreeOpen= false;
+		
+		};
+	});
+
+$('#mixAndStones').click(function(event){
+		
+
+		if(!panelTwoOpen){
+		$("#seedToTableSisters").animate({ marginLeft: '200'}, 500);
+		$("#mixAndStones").animate({ marginLeft: '300'}, 500);
+		$("#bareFrontier").animate({ marginLeft: '93%'}, 500);
+		panelOneOpen=false;
+		panelTwoOpen=true;
+		panelThreeOpen=false;
+		}
+		else {
+		$("#seedToTableSisters").animate({ marginLeft: '200'}, 500);
+		$("#mixAndStones").animate({ marginLeft: '86%'}, 500);
+		$("#bareFrontier").animate({ marginLeft: '93%'}, 500);
+		panelOneOpen = true;
+		panelTwoOpen=false;
+		panelThreeOpen= false;
+
+		}
+	});
+
+$('#bareFrontier').click(function(event){
+		if (!panelThreeOpen) {
+		$("#seedToTableSisters").animate({ marginLeft: '200'}, 500);
+		$("#mixAndStones").animate({ marginLeft: '300'}, 500);
+		$("#bareFrontier").animate({ marginLeft: '400'}, 500);
+		panelOneOpen = false
+		panelTwoOpen =false
+		panelThreeOpen = true;
+		}
+		else{
+			$("#seedToTableSisters").animate({ marginLeft: '200'}, 500);
+			$("#mixAndStones").animate({ marginLeft: '300'}, 500);
+			$("#bareFrontier").animate({ marginLeft: '93%'}, 500);
+
+			panelOneOpen = false;
+			panelTwoOpen=true;
+			panelThreeOpen = false;
+		}
+	});
+
 
 })
 
