@@ -8,20 +8,34 @@ $(document).ready(function(){
 
 var navOpen = false;
 
-	$('.menu-title').click(function(){
-		if (!navOpen) {
+	// $('.menu-title').click(function(){
+	// 	if (!navOpen) {
+	// 		$('nav').animate({marginTop: '0'}, 500);
+	// 		$('.menu-trigger').css({display: "none"});
+	// 		$('.menu-trigger2').css({display: "inline"});
+		
+	// 		navOpen = true;
+	// 	} else {
+	// 		$('nav').animate({marginTop: '-450'}, 500);
+	// 		$('.menu-trigger').css({display: "inline"});
+	// 		$('.menu-trigger2').css({display: "none"});
+	// 		navOpen = false;
+	// 	};
+	// });
+
+	$('.menu').mouseenter(function(){
+		
 			$('nav').animate({marginTop: '0'}, 500);
 			$('.menu-trigger').css({display: "none"});
 			$('.menu-trigger2').css({display: "inline"});
-		
-			navOpen = true;
-		} else {
+		});
+
+	$('.menu').mouseleave(function(){
 			$('nav').animate({marginTop: '-450'}, 500);
 			$('.menu-trigger').css({display: "inline"});
 			$('.menu-trigger2').css({display: "none"});
-			navOpen = false;
-		};
-	});
+			
+		});
 
 
  $('.menu li:nth-child(1)').click(function(event) {

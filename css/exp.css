@@ -1,0 +1,220 @@
+
+html.red {
+  background: #993333;
+}
+
+.top.content {
+	display: none;
+}
+
+.head {
+	margin-left: 7.5%;
+	padding-right: 5%;
+	margin-top: 20%;
+	float: left;
+}
+
+.head h1{
+    font-size: 25px;
+    color: #993333;
+    font-weight: bold;
+
+}
+
+.head.white h1 {
+	color: white;
+}
+
+.line-break {
+	width: 100%;
+	margin-top: 2%;
+}
+
+.line-break img {
+	width: 85%;
+	margin-left: 7.5%;
+}
+
+.experience-panels {
+	width: 100%;
+}
+
+.experience-panels .panel {
+	width: 100%;
+	height: 10%;
+	margin-top: 10%;
+	padding-bottom: 5%;
+	float: left;
+}
+
+.experience-panels .panel h1 {
+	text-align: center;
+	font-size: 30px;
+	width: 35%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #d8f9ec;
+	background: red;
+}
+
+.experience-panels .panel h3 {
+	color: tomato;
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.experience-panels .panel p {
+	font-size: 15px;
+	color: white;
+	padding-top: 10px;
+	text-align: justify;
+}
+
+.experience-panels .panel ul {
+	padding-top: 10px;
+}
+
+.experience-panels .panel li {
+	font-size: 15px;
+	color: white;
+}
+
+.experience-panels .panel a {
+	padding: 2px;
+}
+
+	.experience-panels .panel a:hover {
+		background: #12f1ca;
+		color: tomato;
+	}
+
+.panel .header {
+	float: left;
+	width: 90%;
+	padding-left: 7.5%;
+
+}
+
+.panel .list {
+	padding-left: 7.5%;
+	padding-top: 10px;
+	float: left;
+	width: 90%;
+	font-size: 1.25vw;
+}
+
+.panel .text {
+	padding-top: 10px;
+	padding-left: 7.5%;
+	width: 90%;
+	float: left;
+}
+
+/*CONTACT SECTION*/
+
+.contact-head h1{
+	color: white;
+	text-align: center;
+	text-transform: none;
+	padding-top: 200px;
+	font-size: 6vw;
+	font-weight: lighter;
+}
+
+@media (min-width: 750px) {
+
+	.top.content {
+		display: inline;
+	}
+
+	.head {
+		margin-left: 30%;
+		margin-top: -8%;
+	}
+
+	.head h1{
+		-ms-transform: rotate(-12deg); /* IE 9 */
+    	-webkit-transform: rotate(-12deg); /* Chrome, Safari, Opera */
+    	transform: rotate(-12deg);
+	}
+
+	/*EXPERIENCE*/
+
+	.experience-panels .panel {
+		margin-top: 5%;
+	}
+
+	.experience-panels .panel h1 {
+		width: 50%;
+		font-size: 3vw;
+	}
+
+	.panel .header {
+		float: left;
+		width: 25%;
+		height: 300px;
+		padding-left: 5%;
+
+	}
+
+	.panel .list {
+		padding-left: 5%;
+		padding-top: 116px;
+		float: left;
+		width: 17.5%;
+		font-size: 1.25vw;
+	}
+
+	.panel .text {
+		padding-top: 116px;
+		margin-left: 2%;
+		padding-left: 0;
+		width: 40%;
+		float: left;
+	}
+
+	
+}
+
+@media (min-width: 950px) {
+
+	/*EXPERIENCE*/
+
+	.experience-panels .panel {
+		margin-top: 5%;
+	}
+
+	.panel .header {
+		float: left;
+		width: 25%;
+		height: 300px;
+		margin-left: 7.5%;
+		padding-left: 0;
+
+	}
+
+	.panel .list {
+		padding-left: 5%;
+		padding-top: 116px;
+		float: left;
+		width: 17.5%;
+		font-size: 1.25vw;
+	}
+
+	.panel .text {
+		padding-top: 116px;
+		margin-left: 2%;
+		padding-left: 0;
+		width: 40%;
+		float: left;
+	}
+
+
+	/*CONTACT*/
+
+	.contact-head h1 {
+		padding-top: 50px;
+		font-size: 4vw;
+	}
+	
+}
