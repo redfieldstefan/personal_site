@@ -65,7 +65,10 @@ nav .sections {
 nav .section {
 	border: .3vw solid tomato;
 	width: 19%;
-	/*background: rgba(18, 241, 202, .9);*/
+	background: #ecfdfa;
+	/*background: rgba(0, 0, 0, 1);*/
+/*	background: rgba(149, 149, 149, 1);*/
+
 }
 
 	nav .section:hover {
