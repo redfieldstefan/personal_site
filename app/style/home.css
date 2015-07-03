@@ -70,7 +70,8 @@
 		border: 2vw solid red;
 		border-left: 2vw solid tomato;
 		border-top: 2vw solid tomato;
-	
+		cursor: pointer;
+
 	}
 
 	.section:hover > .text h1 {
@@ -90,9 +91,10 @@
 	.index-head {
 		display: inline;
 	}
-	
+
 	.sections {
-		padding-top: 30%;
+		padding-top: 8%;
+		padding-bottom: 0;
 		width: 35%;
 		margin-left: 32.5%;
 		margin-right: 32.5%;
