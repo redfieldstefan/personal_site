@@ -1,56 +1,52 @@
 <div data-ng-controller="MainController" class="container">
-    <div class = 'top'>
-      <img src = "img/top-grey.png" />
+  <div class = 'top'>
+    <img data-ng-if="!menuClicked" src = "style/img/top-grey.png" />
+  </div>
+  <div class = 'menu'>
+    <div class = 'logo home'>
+        <div class = "section">
+          <div class = "text">
+            <h1>SR</h1>
+            <p>Stefan Redfield</p>
+          </div>
+        </div>
     </div>
-    <div class = 'menu'>
-      <div class = 'logo home'>
-        <a href="index.html">
-          <div class = "section">
-            <div class = "text">
-              <h1>SR</h1>
-              <p>Stefan Redfield</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <nav>
-      </nav>
+  </div>
+
+  <div class = 'content'>
+    <div class = "index-head" data-ng-click="menuClicked = true">
+      <img src = "style/img/arrow.png" />
+      <h1>learn the details</h1>
     </div>
 
-    <div class = 'content'>
-      <div class = "index-head">
-        <img src = "img/arrow.png" />
-        <h1>learn the details</h1>
+    <div data-ng-if="menuClicked" class="sections fade">
+      <div class = "section">
+        <div class = "text">
+          <h1>EX</h1>
+          <p>Experience</p>
+        </div>
       </div>
 
-      <div class = "sections">
-        <a href = "experience.html"><div class = "section">
-          <div class = "text">
-            <h1>EX</h1>
-            <p>Experience</p>
-          </div>
-        </div></a>
+     <div class = "section">
+        <div class = "text">
+          <h1>PP</h1>
+          <p>Personal Projects</p>
+        </div>
+      </div>
 
-        <a href="projects.html"><div class = "section">
-          <div class = "text">
-            <h1>PP</h1>
-            <p>Personal Projects</p>
-          </div>
-        </div></a>
+      <div class = "section">
+        <div class = "text">
+          <h1>AM</h1>
+          <p>About Me</p>
+        </div>
+      </div>
 
-        <a href="me.html"><div class = "section">
-          <div class = "text">
-            <h1>AM</h1>
-            <p>About Me</p>
-          </div>
-        </div></a>
-
-        <a href = "contact.html"><div class = "section">
-          <div class = "text">
-            <h1>C</h1>
-            <p>Contact</p>
-          </div>
-        </div></a>
+      <div class = "section">
+        <div class = "text">
+          <h1>C</h1>
+          <p>Contact</p>
+        </div>
       </div>
     </div>
-  </div><!--END CONTAINER-->
+  </div>
+</div>
