@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         cwd: 'app/',
         expand: true,
         flatten: false,
-        src: 'style/images/**/*',
+        src: 'style/img/**/*',
         dest: 'build/'
       },
       css: {
@@ -55,6 +55,23 @@ module.exports = function (grunt) {
       dev: {
         src: 'build/'
       }
+    },
+
+    watch: {
+      files: watchFiles,
+      html: {
+        files: ['./app/**/*.html'],
+        options: {
+          livereload: true
+        }
+      },
+      css: {
+        files: ['./app/**/*.css'],
+        options: {
+          livereload: true
+        }
+      },
+      tasks: ['build']
     },
 
     nodemon: {
