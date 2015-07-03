@@ -1,5 +1,7 @@
 'use strict';
 
+var webpack = require('webpack')
+
 module.exports = function (grunt) {
 
   var path = require('path');
@@ -20,8 +22,11 @@ module.exports = function (grunt) {
         entry: __dirname + '/app/js/client.js',
         output: {
           path: path.join(__dirname, '/build'),
-          filename: 'bundle.js'
-        }
+          filename: 'bundle.min.js'
+        },
+        plugins: [
+          new webpack.optimize.UglifyJsPlugin({minimize: true})
+         ]
       }
     },
 
