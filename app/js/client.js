@@ -3,8 +3,9 @@
 require('angular/angular');
 require('angular-route');
 require('angular-sanitize');
+require('angular-animate');
 
-var stefanApp = angular.module('stefanApp', ['ngRoute', 'ngSanitize']);
+var stefanApp = angular.module('stefanApp', ['ngRoute', 'ngSanitize', 'ngAnimate']);
 
 //controllers
 require('./controllers/main_controller')(stefanApp);
