@@ -65,7 +65,7 @@ html.red {
 
 .experience-panels .panel p {
 	font-size: 15px;
-	color: white;
+	color: black;
 	padding-top: 10px;
 	text-align: justify;
 }
@@ -76,7 +76,7 @@ html.red {
 
 .experience-panels .panel li {
 	font-size: 15px;
-	color: white;
+	color: black;
 }
 
 .experience-panels .panel a {

@@ -1,5 +1,5 @@
 .fade.ng-enter {
-  transition:3s linear all;
+  transition:1s linear all;
   opacity:0;
 }
 

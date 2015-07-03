@@ -4,35 +4,20 @@
 	float: left;
 }
 
-.index-head {
+h1.index-head {
 	display: none;
 	margin-top: -12%;
 	width: 15%;
 	margin-left: 25%;
-	float: left;
 	z-index: 10;
-}
-
-	.index-head:hover {
-		cursor: pointer;
-	}
-
-	.index-head:hover > h1 {
-		/*color: #790000;*/
-		color: #993333;
-
-	}
-
-.index-head img {
-	float: left;
-	width: 35%;
-	margin-right: 5%;
-}
-
-.index-head h1 {
 	float: left;
 	width: 60%;
 	font-weight: 500;
+}
+
+h1.index-head:hover {
+	color: #993333;
+	cursor: pointer;
 }
 
 .sections {
@@ -88,8 +73,8 @@
 
 @media (min-width: 500px) {
 
-	.index-head {
-		display: inline;
+	h1.index-head {
+		display: inline
 	}
 
 	.sections {

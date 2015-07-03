@@ -19,7 +19,7 @@
 	line-height: 1.25;
 	text-align: justify;
 	padding-bottom: 20px;
-	color: white;
+	color: black;
 
 }
 
@@ -46,11 +46,11 @@
 	padding-right: 25px;
 	padding-bottom: 20px;
 	font-weight: bold;
-	color: #ecfdfa;
+	color: #e23f32;
 }
 
 @media (min-width: 500px) {
-	
+
 	.about-main {
 		width: 45%;
 		padding-top: 0px;
