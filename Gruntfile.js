@@ -7,6 +7,7 @@ module.exports = function (grunt) {
   var path = require('path');
 
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-webpack');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-nodemon');
@@ -45,14 +46,18 @@ module.exports = function (grunt) {
         flatten: false,
         src: 'style/img/**/*',
         dest: 'build/'
-      },
-      css: {
-        cwd: 'app/',
-        expand: true,
-        flatten: false,
-        src: 'style/**/*.css',
-        dest: 'build/',
-        filter: 'isFile'
+      }
+    },
+
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'app/',
+          src: 'style/**/*.css',
+          dest: 'build/',
+          ext: '.min.css'
+        }]
       }
     },
 
@@ -86,5 +91,5 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('build', ['webpack:client', 'copy:html', 'copy:css', 'copy:images'])
+  grunt.registerTask('build', ['webpack:client', 'copy:html', 'cssmin', 'copy:images'])
 };
