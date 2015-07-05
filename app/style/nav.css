@@ -6,7 +6,7 @@
 
 .menu {
 	width: 100%;
-	margin-top: 10px;
+	padding-top: 10px;
 }
 
 .logo {
@@ -24,7 +24,6 @@
 	width: 100%;
 	border: .75vw solid #ecfdfa;
 	color: #12f1ca;
-	/*background: #959595;*/
 	background: rgba(149, 149, 149, 1);
 }
 
@@ -49,26 +48,17 @@
 
 
 nav {
-	
+
 	float: left;
 	width: 75%;
 	z-index: 10;
 	margin-left: 5%;
 }
 
-nav .sections {
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
-
 nav .section {
 	border: .3vw solid tomato;
 	width: 19%;
 	background: #ecfdfa;
-	/*background: rgba(0, 0, 0, 1);*/
-/*	background: rgba(149, 149, 149, 1);*/
-
 }
 
 	nav .section:hover {
@@ -77,22 +67,17 @@ nav .section {
 		border-left: .3vw solid tomato;
 	}
 
-nav .section .text {
+nav .section h1 {
+	font-size: 2vw;
 	padding: 30% 0;
 }
 
-nav .section h1 {
-	font-size: 2vw;
-}
-
 nav .section p {
+	padding: 31% 12.5%;
 	text-align: left;
 	font-size: .75vw;
 	display: none;
-	padding: 0;
 	line-height: 1;
-	padding-left: 12.5%;
-	padding-right: 12.5%;
 }
 
 
@@ -100,7 +85,6 @@ nav .section p {
 
 	.menu {
 		width: 100%;
-		margin-top: 25px;
 	}
 
 	.logo {
@@ -129,15 +113,11 @@ nav .section p {
 		z-index: 10;
 		margin-left: 15%;
 	}
-
-	nav .section .text {
-		padding: 30% 0;
-	}
-		nav .section:hover > .text h1 {
+		nav .section:hover >  h1 {
 			display: none;
 		}
 
-		nav .section:hover > .text p {
+		nav .section:hover >  p {
 			display: inline-block;
 		}
 

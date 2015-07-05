@@ -1,49 +1,34 @@
-
 .content {
 	width: 100%;
 	float: left;
 }
 
-.index-head {
+.index-main {
 	display: none;
-	margin-top: -12%;
+	margin-top: -15%;
 	width: 15%;
-	margin-left: 25%;
-	float: left;
+	margin-left: 20%;
 	z-index: 10;
+	float: left;
+	width: 30%;
 }
 
-	.index-head:hover {
-		cursor: pointer;
-	}
-
-	.index-head:hover > h1 {
-		/*color: #790000;*/
-		color: #993333;
-
-	}
-
-.index-head img {
-	float: left;
-	width: 35%;
-	margin-right: 5%;
-}
-
-.index-head h1 {
-	float: left;
-	width: 60%;
+h1.index-head {
 	font-weight: 500;
 }
 
+h1.index-head:hover {
+	color: #993333;
+	cursor: pointer;
+}
+
 .sections {
-/*	padding-top: 350px;*/
 	padding-top: 15%;
 	margin-left: 10.25%;
 	margin-right: 10.25%;
 	padding-bottom: 100px;
 	float: left;
 	width: 85%;
-
 }
 
 .section {
@@ -57,7 +42,6 @@
 	margin-right: 2.5%;
 	margin-bottom: 2.5%;
 	float: left;
-
 }
 
 .section .text {
@@ -70,7 +54,7 @@
 		border: 2vw solid red;
 		border-left: 2vw solid tomato;
 		border-top: 2vw solid tomato;
-	
+		cursor: pointer;
 	}
 
 	.section:hover > .text h1 {
@@ -87,12 +71,20 @@
 
 @media (min-width: 500px) {
 
-	.index-head {
-		display: inline;
+	.index-main {
+		display: inline
 	}
-	
+
+	.index-main p {
+		text-align: justify;
+		width: 85%;
+		color: #191970;
+		padding-bottom: 25px;
+	}
+
 	.sections {
-		padding-top: 30%;
+		padding-top: 8%;
+		padding-bottom: 0;
 		width: 35%;
 		margin-left: 32.5%;
 		margin-right: 32.5%;

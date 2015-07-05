@@ -19,13 +19,14 @@
 	line-height: 1.25;
 	text-align: justify;
 	padding-bottom: 20px;
-	color: white;
+	color: black;
 
 }
 
 .about-main a:hover {
     background: #12f1ca;
     color: tomato;
+    cursor: pointer;
 }
 
 .about-list {
@@ -46,13 +47,13 @@
 	padding-right: 25px;
 	padding-bottom: 20px;
 	font-weight: bold;
-	color: #ecfdfa;
+	color: #e23f32;
 }
 
 @media (min-width: 500px) {
-	
+
 	.about-main {
-		width: 45%;
+		width: 50%;
 		padding-top: 0px;
 	}
 
@@ -65,6 +66,6 @@
 	}
 
 	.about-list {
-		width: 45%;
+		width: 50%;
 	}
 }

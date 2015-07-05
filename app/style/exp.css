@@ -65,7 +65,7 @@ html.red {
 
 .experience-panels .panel p {
 	font-size: 15px;
-	color: white;
+	color: #191970;
 	padding-top: 10px;
 	text-align: justify;
 }
@@ -76,7 +76,7 @@ html.red {
 
 .experience-panels .panel li {
 	font-size: 15px;
-	color: white;
+	color: black;
 }
 
 .experience-panels .panel a {
@@ -113,7 +113,7 @@ html.red {
 /*CONTACT SECTION*/
 
 .contact-head h1{
-	color: white;
+	color: black;
 	text-align: center;
 	text-transform: none;
 	padding-top: 200px;
@@ -173,7 +173,7 @@ html.red {
 		float: left;
 	}
 
-	
+
 }
 
 @media (min-width: 950px) {
@@ -216,5 +216,5 @@ html.red {
 		padding-top: 50px;
 		font-size: 4vw;
 	}
-	
+
 }

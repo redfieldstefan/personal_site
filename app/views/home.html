@@ -1,0 +1,53 @@
+<div data-ng-controller="MainController" class="container">
+  <div class = 'top'>
+    <img data-ng-if="!menuClicked" src = "style/img/top-grey.png" />
+  </div>
+  <div class = 'menu'>
+    <div class = 'logo home'>
+        <div class = "section">
+          <div class = "text">
+            <h1>SR</h1>
+            <p>Stefan Redfield</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class = 'content'>
+
+  <section class="index-main" data-ng-if="!menuClicked">
+    <p>I am a full-stack software developer, specializing in JavaScript, with a background in creative development. I strive to build applications that are interesting, useful, and exciting for users and to do it in a way that they havent experienced before.</p>
+    <h1 class="index-head" data-ng-click="menuOn()">Learn The Details</h1>
+  </section>
+
+    <div data-ng-if="menuClicked" class="sections fade">
+      <div class = "section" data-ng-click = "redirect('experience')">
+        <div class = "text">
+          <h1>EX</h1>
+          <p>Experience</p>
+        </div>
+      </div>
+
+     <div class = "section" data-ng-click = "redirect('projects')">
+        <div class = "text">
+          <h1>PP</h1>
+          <p>Personal Projects</p>
+        </div>
+      </div>
+
+      <div class = "section" data-ng-click = "redirect('me')">
+        <div class = "text">
+          <h1>AM</h1>
+          <p>About Me</p>
+        </div>
+      </div>
+
+      <div class = "section" data-ng-click = "redirect('contact')">
+        <div class = "text">
+          <h1>C</h1>
+          <p>Contact</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
