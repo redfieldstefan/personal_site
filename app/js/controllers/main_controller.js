@@ -11,5 +11,14 @@ module.exports = function(app) {
     $scope.redirect = function(destination) {
       $location.path('/' + destination)
     }
+
+    $scope.checkWindowWidth = function() {
+      var width = window.innerWidth;
+      if (width < 500) {
+        $scope.menuClicked = true;
+      }
+    }
+
+    window.onresize = $scope.checkWindowWidth;
   }]);
 };

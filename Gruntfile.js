@@ -1,10 +1,9 @@
 'use strict';
 
-var webpack = require('webpack')
-
 module.exports = function (grunt) {
 
   var path = require('path');
+  var webpack = require('webpack');
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -91,5 +90,5 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('build', ['webpack:client', 'copy:html', 'cssmin', 'copy:images'])
+  grunt.registerTask('build', ['webpack:client', 'copy:html', 'cssmin', 'copy:images']);
 };
