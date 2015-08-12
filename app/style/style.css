@@ -26,6 +26,10 @@ html {
 }
 
 body {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1450px;
   font-family: 'Raleway', sans-serif;
   line-height: 1.5em;
   width: 100%
